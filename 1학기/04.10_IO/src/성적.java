@@ -1,13 +1,13 @@
 
-public class 己利 {
+public class 靹膘爜 {
 
-		//捞抚
+		//鞚措
 		String name;
-		//林家
+		//欤检唽
 		String address;
-		//荐切
+		//靾橅暀
 		double math;
-		//康绢
+		//鞓侅柎
 		double english;
 		
 		
@@ -48,7 +48,7 @@ public class 己利 {
 	
 		@Override
 		public String toString() {
-			return "己利 [name=" + name + ", address=" + address + ", math=" + math + ", english=" + english + ", total="+getTotal()
+			return "靹膘爜 [name=" + name + ", address=" + address + ", math=" + math + ", english=" + english + ", total="+getTotal()
 							+", average="+getAverage() +"]";
 		}
 		

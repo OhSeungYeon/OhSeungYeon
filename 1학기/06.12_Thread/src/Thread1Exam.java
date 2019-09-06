@@ -13,11 +13,11 @@ public class Thread1Exam {
 
 	public static void main(String[] args) {
 		
-		System.out.println("ÇÁ·Î±×·¥ ½ÃÀÛ");
+		System.out.println("í”„ë¡œê·¸ë¨ ì‹œì‘");
 		Top d = new Top();
 		Top d2 = new Top();
-		d.start(); //³»ºÎÀûÀ¸·Î ¾î¶»°Ô µ¹¾Æ°¡´Â Áö ¾Ë ¼ö ÀÖ´Ù.
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		d.start(); //ë‚´ë¶€ì ìœ¼ë¡œ ì–´ë–»ê²Œ ëŒì•„ê°€ëŠ” ì§€ ì•Œ ìˆ˜ ìˆë‹¤.
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 
 	}
 

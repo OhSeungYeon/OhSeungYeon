@@ -8,8 +8,8 @@ public class Program {
 		StringBuffer sb2 = new StringBuffer(" Project");
 		StringBuffer str1 = null;
 		StringBuffer str2 = null;
-		str1 = sb1.append(" Project"); //str1Àº ¿©±â¼­ Java Programming Project
-		str2 = sb1.append(sb2); //±Ùµ¥ ¿©±â¼­ ÇÑ ¹ø´õ append, str1¿¡ ´Ù½Ã sb2ÀÎ Project¸¦ °¡Á®´Ù°¡ ºÙÀÌ°Ô µÈ´Ù.
+		str1 = sb1.append(" Project"); //str1ì€ ì—¬ê¸°ì„œ Java Programming Project
+		str2 = sb1.append(sb2); //ê·¼ë° ì—¬ê¸°ì„œ í•œ ë²ˆë” append, str1ì— ë‹¤ì‹œ sb2ì¸ Projectë¥¼ ê°€ì ¸ë‹¤ê°€ ë¶™ì´ê²Œ ëœë‹¤.
 		System.out.println("sb1 = " + sb1);
 		System.out.println("sb2 = " + sb2);
 		System.out.println("str1 = " + str1);
@@ -19,14 +19,14 @@ public class Program {
 		//replace
 		StringBuffer sb3 = new StringBuffer("Funny Java");
 		StringBuffer sb4 = null;
-		sb4 = sb3.replace(0, 5, "Happy"); //0¹øÂ°¿¡¼­ 5¹øÂ°±îÁöÀÇ ±Û¾¾°¡ Happy ·Î ¹Ù²ï´Ù. ¸¸¾à ÇÑ ±ÛÀÚ°¡ ÀÛÀº good À¸·Î ÇÏ°Ô µÇ¸é ±×³É good Java·Î ÇÑ±ÛÀÚ º¸ÃæÇØ¼­ ¹Ù²ãÁØ´Ù.
+		sb4 = sb3.replace(0, 5, "Happy"); //0ë²ˆì§¸ì—ì„œ 5ë²ˆì§¸ê¹Œì§€ì˜ ê¸€ì”¨ê°€ Happy ë¡œ ë°”ë€ë‹¤. ë§Œì•½ í•œ ê¸€ìê°€ ì‘ì€ good ìœ¼ë¡œ í•˜ê²Œ ë˜ë©´ ê·¸ëƒ¥ good Javaë¡œ í•œê¸€ì ë³´ì¶©í•´ì„œ ë°”ê¿”ì¤€ë‹¤.
 		System.out.println("sb3 = " + sb3);
 		System.out.println("sb4 = " + sb4);
 		System.out.println("--------------------------------");
 		
 		//reverse
 		StringBuffer sb5 = sb4.reverse();
-		System.out.println("sb5 = " + sb5); //°Å²Ù·Î Ãâ·Â
+		System.out.println("sb5 = " + sb5); //ê±°ê¾¸ë¡œ ì¶œë ¥
 		
 		//toString
 		String str6 = sb5.toString().toUpperCase();

@@ -5,13 +5,13 @@ public class TestIf {
 	public static void main(String args[]) {
 
 		// int member = 1;
-		// if¹®À¸·Î member°¡ 5ÀÌ¸é, itzy Ãâ·Â
-		// member°¡ 7ÀÌ¸é, BTS Ãâ·Â
-		// member°¡ 9ÀÌ¸é, EXO Ãâ·Â
-		// member°¡ 1ÀÌ¸é, IU Ãâ·Â
-		// member°¡ 13ÀÌ¸é, Seventeen Ãâ·Â
+		// ifë¬¸ìœ¼ë¡œ memberê°€ 5ì´ë©´, itzy ì¶œë ¥
+		// memberê°€ 7ì´ë©´, BTS ì¶œë ¥
+		// memberê°€ 9ì´ë©´, EXO ì¶œë ¥
+		// memberê°€ 1ì´ë©´, IU ì¶œë ¥
+		// memberê°€ 13ì´ë©´, Seventeen ì¶œë ¥
 
-		// 1. if¹®
+		// 1. ifë¬¸
 
 //		if(member == 5) 
 //			System.out.println("itzy");
@@ -24,7 +24,7 @@ public class TestIf {
 //		else if(member == 13)
 //			System.out.println("Seventeen");
 //		
-		// 2. switch¹®
+		// 2. switchë¬¸
 
 //		switch(member) {
 //		
@@ -38,19 +38,19 @@ public class TestIf {
 
 //		System.out.println("----------------------------");
 
-		// ¹İº¹¹®
-		// ±¸±¸´ÜÀ» Ãâ·ÂÇÏÀÚ!
+		// ë°˜ë³µë¬¸
+		// êµ¬êµ¬ë‹¨ì„ ì¶œë ¥í•˜ì!
 
-//		System.out.println("<±¸±¸´Ü 2´Ü>");
+//		System.out.println("<êµ¬êµ¬ë‹¨ 2ë‹¨>");
 
-		// for¹®
+		// forë¬¸
 
 //		int i = 2;
 //			for(int j=1; j<=9; j++) {
 //				System.out.println(i + " X " + j + " = " + i*j);
 //			}
 
-		// while¹®
+		// whileë¬¸
 
 //		int i = 2;
 //		int j = 1;
@@ -61,10 +61,10 @@ public class TestIf {
 //		
 //		System.out.println("--------------------");
 
-		// for-each¹®
+		// for-eachë¬¸
 //		int arr[] = new int[] {5, 7, 9, 1, 13};
-//		for(int a : arr) { //arrÀ» ²¨³»¿À´Âµ¥ Àá½Ã ²¨³»¿À´Â ÀÓ½Ã ¹æÀ» a¶ó°í ÇÔ, ±×·¸°Ô Â÷·Ê´ë·Î ÇÑ´Ù¸é Ã³À½¿¡´Â 5°¡ ÂïÈ÷°í ÇÏ³ª¾¿ ¹Ù²ğ °ÍÀÌ´Ù.
-//			System.out.println(a + ""); //a+"" : ¼ıÀÚ¶û ¹®ÀÚ¿­À» ´õÇÏ¸é ¹®ÀÚ¿­·Î ¹Ù²ï´Ù. ¼ıÀÚ¸¦ ¹®ÀÚ¿­·Î ¹Ù²Ü ¼ö ÀÖ´Â °¡Àå ÆíÇÑ ¹æ¹ı
+//		for(int a : arr) { //arrì„ êº¼ë‚´ì˜¤ëŠ”ë° ì ì‹œ êº¼ë‚´ì˜¤ëŠ” ì„ì‹œ ë°©ì„ aë¼ê³  í•¨, ê·¸ë ‡ê²Œ ì°¨ë¡€ëŒ€ë¡œ í•œë‹¤ë©´ ì²˜ìŒì—ëŠ” 5ê°€ ì°íˆê³  í•˜ë‚˜ì”© ë°”ë€” ê²ƒì´ë‹¤.
+//			System.out.println(a + ""); //a+"" : ìˆ«ìë‘ ë¬¸ìì—´ì„ ë”í•˜ë©´ ë¬¸ìì—´ë¡œ ë°”ë€ë‹¤. ìˆ«ìë¥¼ ë¬¸ìì—´ë¡œ ë°”ê¿€ ìˆ˜ ìˆëŠ” ê°€ì¥ í¸í•œ ë°©ë²•
 //			member = a;
 //			if(member == 5) 
 //				System.out.println("itzy");
@@ -79,13 +79,13 @@ public class TestIf {
 //		}	
 
 //		System.out.println("-----------------------");
-		// ÀÔ·Â¹ŞÀÚ
+		// ì…ë ¥ë°›ì
 
 		Scanner sc = new Scanner(System.in);
 		int member = 0;
 
 	
-//		System.out.print("¸â¹ö ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+//		System.out.print("ë©¤ë²„ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 //
 //		member = sc.nextInt();
 //
@@ -102,7 +102,7 @@ public class TestIf {
 		
 //			while(true) {
 //				
-//				System.out.print("¸â¹ö ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+//				System.out.print("ë©¤ë²„ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 //				member = sc.nextInt();
 //				
 //				if(member==5 || member==7 || member==9 || member==1 || member==13) {
@@ -122,11 +122,11 @@ public class TestIf {
 //			}
 			
 		
-		//for¹®À¸·Î 
+		//forë¬¸ìœ¼ë¡œ 
 		
 			for(boolean i; i = true;) {
 				
-				System.out.print("¸â¹ö ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+				System.out.print("ë©¤ë²„ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 				member = sc.nextInt();
 				
 				if(member==5 || member==7 || member==9 || member==1 || member==13) {

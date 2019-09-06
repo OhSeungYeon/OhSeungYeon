@@ -6,53 +6,53 @@ public class Mathematics {
 
 	public static void main(String[] args) {
 		
-		//abs : Àı´ñ°ª
+		//abs : ì ˆëŒ“ê°’
 		System.out.println(Math.abs(25));  
 		System.out.println(Math.abs(-25));
 		System.out.println(Math.abs(25.5));
 		System.out.println(Math.abs(-25.5));
 		System.out.println("---------------------");
 		
-		//round() : ¹İ¿Ã¸²
+		//round() : ë°˜ì˜¬ë¦¼
 		System.out.println(Math.round(25));
 		System.out.println(Math.round(25.3));
 		System.out.println(Math.round(25.5));
-		System.out.println(Math.round(-25.4)); //¸¶ÀÌ³Ê½º ÁÖÀÇ 
+		System.out.println(Math.round(-25.4)); //ë§ˆì´ë„ˆìŠ¤ ì£¼ì˜ 
 		System.out.println(Math.round(-25.5));
 		System.out.println(Math.round(-25.6));
 		System.out.println("---------------------");
 		
-		//pow() : ¾Õ¿¡ ²¨¸¦ µÚ¿¡ ²¨ ¸¸Å­ Á¦°ö (Á¤¼ö¿©µµ ½Ç¼ö·Î °è»ê ½Ç¼ö¸é ½Ç¼ö·Î °è»ê) 
-		//pow´Â powerÀÇ ÁÙÀÓ¸»
+		//pow() : ì•ì— êº¼ë¥¼ ë’¤ì— êº¼ ë§Œí¼ ì œê³± (ì •ìˆ˜ì—¬ë„ ì‹¤ìˆ˜ë¡œ ê³„ì‚° ì‹¤ìˆ˜ë©´ ì‹¤ìˆ˜ë¡œ ê³„ì‚°) 
+		//powëŠ” powerì˜ ì¤„ì„ë§
 		System.out.println(Math.pow(3, 2));
 		System.out.println(Math.pow(3.0f, 2.0f));
 		System.out.println(Math.pow(5.0, 2));
 		System.out.println(Math.pow(-5.0, 3.0));
 		System.out.println("-------------------------");
 		
-		//sqrt() : Á¦°ö±Ù(Á¤¼öµµ ½Ç¼ö·Î °è»ê)
-		//sqare rootÀÇ ÁÙÀÓ¸»
+		//sqrt() : ì œê³±ê·¼(ì •ìˆ˜ë„ ì‹¤ìˆ˜ë¡œ ê³„ì‚°)
+		//sqare rootì˜ ì¤„ì„ë§
 		System.out.println(Math.sqrt(9));
 		System.out.println(Math.sqrt(9.0f));
 		System.out.println(Math.sqrt(9.0));
-		System.out.println(Math.sqrt(-9.0)); //¸¶ÀÌ³Ê½ºÀÇ Á¦°ö±ÙÀº ¾ø¾î¼­ NanÀ¸·Î ¶ä
+		System.out.println(Math.sqrt(-9.0)); //ë§ˆì´ë„ˆìŠ¤ì˜ ì œê³±ê·¼ì€ ì—†ì–´ì„œ Nanìœ¼ë¡œ ëœ¸
 		System.out.println("------------------------");
 		
-		//random() : ·£´ı
+		//random() : ëœë¤
 		System.out.println(Math.random());
 		System.out.println(Math.random());
 		System.out.println((int)(Math.random()*5));
-		System.out.println((int)(Math.random()*5)); //0ºÎÅÍ 4±îÁöÀÇ ÀÓÀÇÀÇ Á¤¼ö (0<=x<1) ÀÌ½Ä¿¡´Ù°¡ *5¸¦ °öÇÏ¸é µÈ´Ù.
-		System.out.println((int)(Math.random()*10)); //0ºÎÅÍ 9±îÁöÀÇ ÀÓÀÇÀÇ Á¤¼ö
-		System.out.println((int)(Math.random()*100)); //0ºÎÅÍ 99±îÁöÀÇ ÀÓÀÇÀÇ Á¤¼ö
+		System.out.println((int)(Math.random()*5)); //0ë¶€í„° 4ê¹Œì§€ì˜ ì„ì˜ì˜ ì •ìˆ˜ (0<=x<1) ì´ì‹ì—ë‹¤ê°€ *5ë¥¼ ê³±í•˜ë©´ ëœë‹¤.
+		System.out.println((int)(Math.random()*10)); //0ë¶€í„° 9ê¹Œì§€ì˜ ì„ì˜ì˜ ì •ìˆ˜
+		System.out.println((int)(Math.random()*100)); //0ë¶€í„° 99ê¹Œì§€ì˜ ì„ì˜ì˜ ì •ìˆ˜
 		
 		
-		//Random Å¬·¡½º
+		//Random í´ë˜ìŠ¤
 		Random random = new Random();
-		int randomNumber = random.nextInt(100); //0ºÎÅÍ 99°¡ÁöÀÇ ÀÓÀÇÀÇ Á¤¼ö
+		int randomNumber = random.nextInt(100); //0ë¶€í„° 99ê°€ì§€ì˜ ì„ì˜ì˜ ì •ìˆ˜
 		int start = 100;
 		int end = 999;
-		int randomNumber100to999 = random.nextInt(end-start+1) + start; //start~end±îÁöÀÓÀÇÀÇ Á¤¼ö
+		int randomNumber100to999 = random.nextInt(end-start+1) + start; //start~endê¹Œì§€ì„ì˜ì˜ ì •ìˆ˜
 
 	}
 

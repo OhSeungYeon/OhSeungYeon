@@ -13,12 +13,12 @@ public class Program {
 			System.out.println("in1.equals(in3) --> " + in1.equals(in3));
 			System.out.println("---------------------");
 			
-			//toString() : Wrapper Å¬·¡½º -> String
+			//toString() : Wrapper í´ë˜ìŠ¤ -> String
 			System.out.println(new Integer(100).toString());
 			System.out.println(new Double(55.7).toString());
 			
-			//valueOf() : String - > Wrapper Å¬·¡½º
-			System.out.println(Integer.valueOf("123")); //Integer °´Ã¼
+			//valueOf() : String - > Wrapper í´ë˜ìŠ¤
+			System.out.println(Integer.valueOf("123")); //Integer ê°ì²´
 			System.out.println(Double.valueOf("123.456"));
 			
 			//parseInt() : String - > int
@@ -27,7 +27,7 @@ public class Program {
 			//parseDouble() : Sring - > double
 			System.out.println(Double.parseDouble("789.123"));
 			
-			//Wrapper Å¬·¡½º -> ±âº» ÀÚ·áÇü
+			//Wrapper í´ë˜ìŠ¤ -> ê¸°ë³¸ ìë£Œí˜•
 			System.out.println(new Integer(100).intValue());
 			System.out.println(new Double(3.31).doubleValue());
 		}

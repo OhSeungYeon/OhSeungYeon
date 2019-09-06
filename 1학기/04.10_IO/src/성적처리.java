@@ -1,54 +1,54 @@
 import java.io.*;
 import java.util.*;
 
-public class ¼ºÀûÃ³¸® {
+public class ì„±ì ì²˜ë¦¬ {
 	
-	static ArrayList<¼ºÀû> ¼ºÀûµé = new ArrayList<>();
+	static ArrayList<ì„±ì > ì„±ì ë“¤ = new ArrayList<>();
 	
 
 	public static void main(String[] args) {
 		
-		//ÆÄÀÏ¿¬°áÇÏÀÚ
+		//íŒŒì¼ì—°ê²°í•˜ì
 		FileReader fr;
 		try {
 			fr = new FileReader("src/Writed.txt");
-			//¹öÆÛ ¿¬°áÇÏÀÚ
+			//ë²„í¼ ì—°ê²°í•˜ì
 			BufferedReader br = new BufferedReader(fr);
-			//¹İº¹, ÇÑÁÙÀĞÀÚ
+			//ë°˜ë³µ, í•œì¤„ì½ì
 			String line;
-			while((line = br.readLine()) != null) { //ÀÌ¸§\tÁÖ¼Ò\t¼öÇĞ\t¿µ¾î
-				StringTokenizer st = new StringTokenizer(line, "\t"); //t´ÜÀ§·Î ÀÌ¸§, ÁÖ¼Ò, ¼öÇĞ, ¿µ¾î¸¦ ÀÚ¸¥´Ù.
+			while((line = br.readLine()) != null) { //ì´ë¦„\tì£¼ì†Œ\tìˆ˜í•™\tì˜ì–´
+				StringTokenizer st = new StringTokenizer(line, "\t"); //të‹¨ìœ„ë¡œ ì´ë¦„, ì£¼ì†Œ, ìˆ˜í•™, ì˜ì–´ë¥¼ ìë¥¸ë‹¤.
 				
-				//»õ °´Ã¼ ¸¸µé¾î¼­ ³ÖÀÚ
-				¼ºÀû new¼ºÀû = new ¼ºÀû(); 
-				new¼ºÀû.setName(st.nextToken()); //ÇÏ³ª¾¿ ÀÚ¸¥ °ÍÀ» °´Ã¼¸¶´Ù Áı¾î³Ö´Â Áß
-				new¼ºÀû.setAddress(st.nextToken());
-				new¼ºÀû.setMath(Double.parseDouble(st.nextToken())); //tokenÀº String ÇüÀÌ°í   Math¶û english´Â doubleÇüÀÌ±â ¶§¹®¿¡ Çüº¯È¯ÇØÁÖ¾î¾ßÇÑ´Ù.
-				new¼ºÀû.setEnglish(Double.parseDouble(st.nextToken()));
+				//ìƒˆ ê°ì²´ ë§Œë“¤ì–´ì„œ ë„£ì
+				ì„±ì  newì„±ì  = new ì„±ì (); 
+				newì„±ì .setName(st.nextToken()); //í•˜ë‚˜ì”© ìë¥¸ ê²ƒì„ ê°ì²´ë§ˆë‹¤ ì§‘ì–´ë„£ëŠ” ì¤‘
+				newì„±ì .setAddress(st.nextToken());
+				newì„±ì .setMath(Double.parseDouble(st.nextToken())); //tokenì€ String í˜•ì´ê³    Mathë‘ englishëŠ” doubleí˜•ì´ê¸° ë•Œë¬¸ì— í˜•ë³€í™˜í•´ì£¼ì–´ì•¼í•œë‹¤.
+				newì„±ì .setEnglish(Double.parseDouble(st.nextToken()));
 				
-				//¸®½ºÆ®¿¡ ¸¸µé¾îÁø »õ °´Ã¼ ³ÖÀÚ
-				¼ºÀûµé.add(new¼ºÀû);
+				//ë¦¬ìŠ¤íŠ¸ì— ë§Œë“¤ì–´ì§„ ìƒˆ ê°ì²´ ë„£ì
+				ì„±ì ë“¤.add(newì„±ì );
 			}
-			//¸®½ºÆ® Ãâ·ÂÇÏÀÚ
-//			for(¼ºÀû a : ¼ºÀûµé) {
+			//ë¦¬ìŠ¤íŠ¸ ì¶œë ¥í•˜ì
+//			for(ì„±ì  a : ì„±ì ë“¤) {
 //				System.out.println(a);
 //			}
-			for(int i=0; i<¼ºÀûµé.size(); i++) {
-				System.out.println(¼ºÀûµé.get(i));
+			for(int i=0; i<ì„±ì ë“¤.size(); i++) {
+				System.out.println(ì„±ì ë“¤.get(i));
 				
-				//ÆÄÀÏ·Î ÀúÀåÇÏÀÚ
-				//ÆÄÀÏ ¿¬°áÇÏÀÚ
+				//íŒŒì¼ë¡œ ì €ì¥í•˜ì
+				//íŒŒì¼ ì—°ê²°í•˜ì
 				FileWriter fw = new FileWriter("src/save.txt");
-				//¹öÆÛ ¿¬°áÇÏÀÚ
+				//ë²„í¼ ì—°ê²°í•˜ì
 				BufferedWriter bw = new BufferedWriter(fw);
-				//¾²ÀÚ
-				for(¼ºÀû a : ¼ºÀûµé) {
+				//ì“°ì
+				for(ì„±ì  a : ì„±ì ë“¤) {
 					bw.write(a.getName() + "\t" + a.getAddress() + "\t");
 					bw.write(a.getMath() + "\t" + a.getEnglish() + "\t");
 					bw.write(a.getTotal() + "\t" + a.getAverage() + "\t");
 					bw.newLine(); // == bw.write("\n")
 				}
-				//´İÀÚ
+				//ë‹«ì
 				fr.close();
 				fw.close();
 				br.close();

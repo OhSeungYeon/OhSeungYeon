@@ -5,16 +5,16 @@ import java.io.IOException;
 
 public class ReadLineFileExam {
 	public static void main(String[] args) {
-		//ÆÄÀÏ ÀĞ°Ô ¿¬°á
+		//íŒŒì¼ ì½ê²Œ ì—°ê²°
 		FileReader fr;
 		try {
 			fr = new FileReader("src/dataw.txt");
-			//¹öÆÛ ÀĞ°Ô ¿¬°á
+			//ë²„í¼ ì½ê²Œ ì—°ê²°
 			BufferedReader br = new BufferedReader(fr);
-			//ÇÑ ÁÙ ÀĞ±â
+			//í•œ ì¤„ ì½ê¸°
 			String s;
 			while((s = br.readLine()) != null) {
-				//È­¸é Ãâ·Â
+				//í™”ë©´ ì¶œë ¥
 				System.out.println(s);
 			}
 		} catch (FileNotFoundException e) {

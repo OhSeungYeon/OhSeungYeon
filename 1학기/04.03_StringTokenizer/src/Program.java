@@ -5,7 +5,7 @@ public class Program {
 	public static void main(String[] args) {
 		
 		String line;
-		String tmpStr = "hong ¿ë»ê±¸ 10.5 20.5";
+		String tmpStr = "hong ìš©ì‚°êµ¬ 10.5 20.5";
 		StringTokenizer parse = new StringTokenizer(tmpStr);
 		String name;
 		String address;
@@ -26,7 +26,7 @@ public class Program {
 		avg = total / 2.0;
 		System.out.println(name + "\t" + address + "\t" + math + "\t" + english + "\t" + total + "\t" + avg);
 		
-		String[] arrStr = tmpStr.split(" "); //¶ç¾î¾²±â·Î ºĞ¸®ÇØ¶ù
+		String[] arrStr = tmpStr.split(" "); //ë„ì–´ì“°ê¸°ë¡œ ë¶„ë¦¬í•´ë
 		for(String str : arrStr) {
 			System.out.print(str + "\t");
 		}

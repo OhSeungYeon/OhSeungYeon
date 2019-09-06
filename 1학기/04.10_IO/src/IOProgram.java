@@ -12,7 +12,7 @@ public class IOProgram {
 		
 		int bt;
 		try {
-			while((bt = System.in.read()) != -1) { //System.in.read´Â ÇÑ±ÛÀº ±úÁ®¼­ ³ª¿Â´Ù.
+			while((bt = System.in.read()) != -1) { //System.in.readëŠ” í•œê¸€ì€ ê¹¨ì ¸ì„œ ë‚˜ì˜¨ë‹¤.
 				System.out.print((char)bt);
 			}
 		} catch(IOException e) {

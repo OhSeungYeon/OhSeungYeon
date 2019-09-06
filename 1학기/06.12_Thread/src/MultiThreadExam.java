@@ -6,8 +6,8 @@ class Summing {
 		sum = 0;
 		for(int i=1; i<=num; i++) {
 			sum += i;
-			System.out.println("½º·¹µå : "+ Thread.currentThread().getName());
-			System.out.println("ÀÇ 1~" + i + "±îÁö ÇÕÀº " + sum) ;
+			System.out.println("ìŠ¤ë ˆë“œ : "+ Thread.currentThread().getName());
+			System.out.println("ì˜ 1~" + i + "ê¹Œì§€ í•©ì€ " + sum) ;
 			try {
 				Thread.sleep(500);
 			}
@@ -29,11 +29,11 @@ public class MultiThreadExam extends Thread {
 		super(s);
 		this.sum = sum;
 		this.num = num;
-		System.out.println("½º·¹µå : " + getName() + "°¡ ½ÃÀÛµÊ");
+		System.out.println("ìŠ¤ë ˆë“œ : " + getName() + "ê°€ ì‹œìž‘ë¨");
 	}
 	public void run() {
 		sum.sumTo(num);
-		System.out.println("½º·¹µå : " + getName() + "°¡ Á¾·áµÊ");
+		System.out.println("ìŠ¤ë ˆë“œ : " + getName() + "ê°€ ì¢…ë£Œë¨");
 	}
 	public static void main(String args[]) {
 		Summing sum = new Summing();

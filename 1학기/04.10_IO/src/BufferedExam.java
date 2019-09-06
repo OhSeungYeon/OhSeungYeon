@@ -17,7 +17,7 @@ public class BufferedExam {
 				bo.flush();
 			}
 			
-		}catch(IOException ie) {} //¿¹¿ÜÃ³¸®½Ã ¾Æ¹«°Íµµ ¾ÈÇÔ
+		}catch(IOException ie) {} //ì˜ˆì™¸ì²˜ë¦¬ì‹œ ì•„ë¬´ê²ƒë„ ì•ˆí•¨
 		
 	}
 

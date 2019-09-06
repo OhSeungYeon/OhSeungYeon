@@ -4,23 +4,23 @@ public class p151_tryCatch {
 	public static void main(String[] args) {
 		
 		String[] irum = new String[3];
-		irum[0] = "ÀÌÃ¤¸°";
-		irum[1] = "¿øÃ¤¸°";
-		irum[2] = "¼­³²°æ";
+		irum[0] = "ì´ì±„ë¦°";
+		irum[1] = "ì›ì±„ë¦°";
+		irum[2] = "ì„œë‚¨ê²½";
 		
-		//try.catch¹®ÀÌ ¾øÀ¸¸é ¹è¿­ÀÇ ¹æÀº 0~2±îÁö ÀÖ´Âµ¥ length°¡ 1~3±îÁö ÀÖ¾î¼­ ¹æ ÇÏ³ª°¡ ³²¾Æ¼­ ¿À·ù°¡ ³ª°Ô µÈ´Ù.
-		//ÇÏÁö¸¸ try.catchÀ» ÇÏ¸é ÀüÃ¼ÀûÀÎ ¿À·ù ¹ß»ıÀÌ ¾Æ´Ñ ¿¹¿Ü ¹ß»ı½Ã ¿¹¿Ü ¹ß»ıÀ» Ãâ·ÂÇØ³½´Ù.
+		//try.catchë¬¸ì´ ì—†ìœ¼ë©´ ë°°ì—´ì˜ ë°©ì€ 0~2ê¹Œì§€ ìˆëŠ”ë° lengthê°€ 1~3ê¹Œì§€ ìˆì–´ì„œ ë°© í•˜ë‚˜ê°€ ë‚¨ì•„ì„œ ì˜¤ë¥˜ê°€ ë‚˜ê²Œ ëœë‹¤.
+		//í•˜ì§€ë§Œ try.catchì„ í•˜ë©´ ì „ì²´ì ì¸ ì˜¤ë¥˜ ë°œìƒì´ ì•„ë‹Œ ì˜ˆì™¸ ë°œìƒì‹œ ì˜ˆì™¸ ë°œìƒì„ ì¶œë ¥í•´ë‚¸ë‹¤.
 		try {
 			for(int i=0; i<=irum.length; i++) {
 				System.out.println(irum[i]);
 			}			
 		} catch(ArrayIndexOutOfBoundsException e) {
-			System.out.println("¿¹¿Ü ¹ß»ı");
+			System.out.println("ì˜ˆì™¸ ë°œìƒ");
 			e.printStackTrace();
 		} catch(Exception e) {
-			System.out.println("ÀÍ¼Á¼Ç");
+			System.out.println("ìµì…‰ì…˜");
 		} finally {
-			System.out.println("¹«Á¶°Ç ½ÇÇàÇÕ´Ï´Ù.");
+			System.out.println("ë¬´ì¡°ê±´ ì‹¤í–‰í•©ë‹ˆë‹¤.");
 		}
 
 	}

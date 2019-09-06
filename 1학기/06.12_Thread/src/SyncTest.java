@@ -5,7 +5,7 @@ public class SyncTest {
 	private int num = 0;
 	public synchronized void IncreaseNumber() {
 		num ++; //num = num + 1 
-		sum = sum + num; //(num++°ú °°ÀÌ ÀÌ ¹®ÀåµéÀº ÀĞ°í ¾²´Â °úÁ¤ÀÌ µÑ ´Ù µÈ´Ù.)
+		sum = sum + num; //(num++ê³¼ ê°™ì´ ì´ ë¬¸ì¥ë“¤ì€ ì½ê³  ì“°ëŠ” ê³¼ì •ì´ ë‘˜ ë‹¤ ëœë‹¤.)
 	}
 		
 	public void IncreasetNumber2() {

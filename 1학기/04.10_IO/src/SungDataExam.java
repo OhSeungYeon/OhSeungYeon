@@ -3,28 +3,28 @@ import java.util.StringTokenizer;
 
 public class SungDataExam {
 
-//	Kim ¿ë»ê±¸ 100 100 total average
-//	Lee ±¸·Î±¸ 90 90 total average
-//	Choi °­³²±¸ 100 100 total average
-//	Hong °­¼­±¸ 90 90 total average
+//	Kim ìš©ì‚°êµ¬ 100 100 total average
+//	Lee êµ¬ë¡œêµ¬ 90 90 total average
+//	Choi ê°•ë‚¨êµ¬ 100 100 total average
+//	Hong ê°•ì„œêµ¬ 90 90 total average
 	
 	public static void main(String[] args) {
 		try {
-			//ÆÄÀÏ ¿¬°áÇÏÀÚ(Writed.txt)
+			//íŒŒì¼ ì—°ê²°í•˜ì(Writed.txt)
 			FileReader fr = new FileReader("src/Writed.txt");
-			//¹öÆÛ ¿¬°áÇÏÀÚ(readLine()ÇÏ±â À§ÇØ¼­)
+			//ë²„í¼ ì—°ê²°í•˜ì(readLine()í•˜ê¸° ìœ„í•´ì„œ)
 			BufferedReader br = new BufferedReader(fr);
-			//ÇÑ ÁÙ ÀĞ°í, \t·Î ¿¬°áÇÏÀÚ
-			String csvStr = ""; //¸ğµç ³»¿ë \t·Î ¿¬°áÇÑ String
-			String tmpStr = ""; //ÇÑÁÙ ÀĞ±â¿ë ÀÓ½Ã String
+			//í•œ ì¤„ ì½ê³ , \të¡œ ì—°ê²°í•˜ì
+			String csvStr = ""; //ëª¨ë“  ë‚´ìš© \të¡œ ì—°ê²°í•œ String
+			String tmpStr = ""; //í•œì¤„ ì½ê¸°ìš© ì„ì‹œ String
 			while((tmpStr = br.readLine()) != null) {
 				csvStr += tmpStr + "\t";
 			}
 			//System.out.println(csvStr);
 			
-			//tokenÀ¸·Î ³ª´©¾î µ¥ÀÌÅÍ ÀúÀåÇÏÀÚ
+			//tokenìœ¼ë¡œ ë‚˜ëˆ„ì–´ ë°ì´í„° ì €ì¥í•˜ì
 			StringTokenizer parse = new StringTokenizer(csvStr, "\t");
-			int length = parse.countTokens() / 4; //ÃÑ ÅäÅ«ÀÌ 16°³ÀÎµ¥ 4°³¾¿ ÀÚ¸£´Â °Í
+			int length = parse.countTokens() / 4; //ì´ í† í°ì´ 16ê°œì¸ë° 4ê°œì”© ìë¥´ëŠ” ê²ƒ
 			String[] name = new String[length];
 			String[] address = new String[length];
 			double[] math = new double[length];
@@ -34,17 +34,17 @@ public class SungDataExam {
 			for(int i = 0; i<length; i++) {
 				name[i] = parse.nextToken();
 				address[i] = parse.nextToken();
-				math[i] = Double.parseDouble(parse.nextToken()); //StringÀ¸·Î ÂÉ°³´Â °Çµ¥ double·Î ÂÉ°³°í ÀÖ¾î¼­ ¿À·ù³­´Ù
-				english[i] = Double.parseDouble(parse.nextToken()); //double·Î Çüº¯È­ÇØÁÖ±â
+				math[i] = Double.parseDouble(parse.nextToken()); //Stringìœ¼ë¡œ ìª¼ê°œëŠ” ê±´ë° doubleë¡œ ìª¼ê°œê³  ìˆì–´ì„œ ì˜¤ë¥˜ë‚œë‹¤
+				english[i] = Double.parseDouble(parse.nextToken()); //doubleë¡œ í˜•ë³€í™”í•´ì£¼ê¸°
 				total[i] = math[i] + english[i];
 				avg[i] = total[i] / 2;
 			}
-			//total, avg °è»êÇÏÀÚ
+			//total, avg ê³„ì‚°í•˜ì
 			
-			//Ãâ·ÂÇÏÀÚ
+			//ì¶œë ¥í•˜ì
 			for(int i=0; i<length; i++) {
-				System.out.println("ÀÌ¸§ : " + name[i] + ", ÁÖ¼Ò : " + address[i] + ", ¼öÇĞ : " + math[i] + 
-						", ¿µ¾î" + english[i] + ", ÃÑÁ¡ : " + total[i] + ", Æò±Õ : " + avg[i]);
+				System.out.println("ì´ë¦„ : " + name[i] + ", ì£¼ì†Œ : " + address[i] + ", ìˆ˜í•™ : " + math[i] + 
+						", ì˜ì–´" + english[i] + ", ì´ì  : " + total[i] + ", í‰ê·  : " + avg[i]);
 			} 
 		} catch(FileNotFoundException e) {
 			e.printStackTrace();

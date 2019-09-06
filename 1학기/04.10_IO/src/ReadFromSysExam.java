@@ -7,8 +7,8 @@ public class ReadFromSysExam {
 		byte[] b = new byte[1024];
 		int len = 0;
 		try {
-			len = System.in.read(b); //¿ø·¡´Â ÀÌ·¸°Ô ÀĞ´Ù°¡
-		} catch (IOException e) { //IOException ¿À·ù°¡ ¹ß»ıÇÏ¸é catch
+			len = System.in.read(b); //ì›ë˜ëŠ” ì´ë ‡ê²Œ ì½ë‹¤ê°€
+		} catch (IOException e) { //IOException ì˜¤ë¥˜ê°€ ë°œìƒí•˜ë©´ catch
 			e.printStackTrace();
 		}
 		System.out.write(b, 0, len);
