@@ -7,7 +7,7 @@ public class GUI1_JFrame {
         JFrame frame = new JFrame("창이름");
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int 화w = screenSize.width;
-        int 화h = screenSize.hight;
+        int 화h = screenSize.height;
         int 창w = 400;
         int 창h = 200;
         frame.setPreferredSize(new Dimension(창w, 창h));
