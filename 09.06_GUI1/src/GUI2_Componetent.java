@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GUI2_Componetent {
 
@@ -23,6 +25,14 @@ public class GUI2_Componetent {
 
         JTextField tf0 = new JTextField("JTextField");
         JTextArea ta0 = new JTextArea(2, 10);
+
+
+        bt0.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                bt0.setText("Clicked");
+            }
+        });
 
         panel.add(lb0);
         panel.add(bt0);
