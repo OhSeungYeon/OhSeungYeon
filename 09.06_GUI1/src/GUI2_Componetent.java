@@ -26,11 +26,24 @@ public class GUI2_Componetent {
         JTextField tf0 = new JTextField("JTextField");
         JTextArea ta0 = new JTextArea(2, 10);
 
+        JPanel panelResult = new JPanel();
+        JLabel lbResult = new JLabel("Result");
 
         bt0.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                bt0.setText("Clicked");
+                String result = "";
+                result += lb0.getText();
+                result += bt0.getText();
+                result += cb0.isSelected();
+                result += cb1.isSelected();
+                result += rb0.isSelected();
+                result += rb1.isSelected();
+                result += tf0.getText();
+                result += ta0.getText();
+                result += cbox0.getSelectedIndex();
+                result += cbox0.getSelectedItem();
+                lbResult.setText(result);
             }
         });
 
@@ -43,6 +56,7 @@ public class GUI2_Componetent {
         panel.add(tf0);
         panel.add(ta0);
         panel.add(cbox0);
+        panel.add(lbResult);
 
         frame.add(panel);
 
