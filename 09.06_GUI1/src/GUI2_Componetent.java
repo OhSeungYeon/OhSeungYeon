@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class GUI2_Componetent {
 
@@ -29,6 +28,21 @@ public class GUI2_Componetent {
         JPanel panelResult = new JPanel();
         JLabel lbResult = new JLabel("Result");
 
+        cb1. setSelected(true);
+        rb0.setSelected(true); //초기값 체크가 되어서 시작된다.
+        tf0.setText("전화번호를 입력하세요");
+        tf0.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                tf0.setText("");
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                if (tf0.getText().equals("")) //text에 정보를 집어넣었을 경우 다른 곳에 포커스를 맞추어도 정보가 없어지면 안되는 경우를 대비함
+                tf0.setText("전화번호를 입력하세요");
+            }
+        });
         bt0.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -46,6 +60,33 @@ public class GUI2_Componetent {
                 lbResult.setText(result);
             }
         });
+
+        ItemListener il = new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if(e.getSource() == cb0) {
+                    System.out.println("JCheckBox0 : " + cb0.isSelected());
+                }
+                else if(e.getSource() == cb1) {
+                    System.out.println("JCheckBox1 : " + cb1.isSelected());
+                }
+                else if(e.getSource() == rb0) {
+                    System.out.println("JCheckBox1 : " + rb0.isSelected());
+                }
+                else if(e.getSource() == rb1) {
+                    System.out.println("JCheckBox1 : " + rb1.isSelected());
+                }
+                else if(e.getSource() == cbox0) {
+                    System.out.println(cbox0.getSelectedItem());
+                }
+            }
+        };
+
+        cb0.addItemListener(il);
+        cb1.addItemListener(il);
+        rb0.addItemListener(il);
+        rb1.addItemListener(il);
+        cbox0.addItemListener(il);
 
         panel.add(lb0);
         panel.add(bt0);
