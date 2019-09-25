@@ -46,39 +46,29 @@ public class GUI2_Componetent {
         bt0.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String result = "";
-                result += lb0.getText();
-                result += bt0.getText();
-                result += cb0.isSelected();
-                result += cb1.isSelected();
-                result += rb0.isSelected();
-                result += rb1.isSelected();
-                result += tf0.getText();
-                result += ta0.getText();
-                result += cbox0.getSelectedIndex();
-                result += cbox0.getSelectedItem();
-                lbResult.setText(result);
+                showResult(lb0, bt0, cb0, cb1, rb0, rb1, tf0, ta0, cbox0, lbResult);
             }
         });
 
         ItemListener il = new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                if(e.getSource() == cb0) {
-                    System.out.println("JCheckBox0 : " + cb0.isSelected());
-                }
-                else if(e.getSource() == cb1) {
-                    System.out.println("JCheckBox1 : " + cb1.isSelected());
-                }
-                else if(e.getSource() == rb0) {
-                    System.out.println("JCheckBox1 : " + rb0.isSelected());
-                }
-                else if(e.getSource() == rb1) {
-                    System.out.println("JCheckBox1 : " + rb1.isSelected());
-                }
-                else if(e.getSource() == cbox0) {
-                    System.out.println(cbox0.getSelectedItem());
-                }
+                showResult(lb0, bt0, cb0, cb1, rb0, rb1, tf0, ta0, cbox0, lbResult);
+//                if(e.getSource() == cb0) {
+//                    System.out.println("JCheckBox0 : " + cb0.isSelected());
+//                }
+//                else if(e.getSource() == cb1) {
+//                    System.out.println("JCheckBox1 : " + cb1.isSelected());
+//                }
+//                else if(e.getSource() == rb0) {
+//                    System.out.println("JCheckBox1 : " + rb0.isSelected());
+//                }
+//                else if(e.getSource() == rb1) {
+//                    System.out.println("JCheckBox1 : " + rb1.isSelected());
+//                }
+//                else if(e.getSource() == cbox0) {
+//                    System.out.println(cbox0.getSelectedItem());
+//                }
             }
         };
 
@@ -106,6 +96,21 @@ public class GUI2_Componetent {
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+    }
+
+    private static void showResult(JLabel lb0, JButton bt0, JCheckBox cb0, JCheckBox cb1, JRadioButton rb0, JRadioButton rb1, JTextField tf0, JTextArea ta0, JComboBox cbox0, JLabel lbResult) {
+        String result = "";
+        result += lb0.getText();
+        result += bt0.getText();
+        result += cb0.isSelected();
+        result += cb1.isSelected();
+        result += rb0.isSelected();
+        result += rb1.isSelected();
+        result += tf0.getText();
+        result += ta0.getText();
+        result += cbox0.getSelectedIndex();
+        result += cbox0.getSelectedItem();
+        lbResult.setText(result);
     }
 
 }
