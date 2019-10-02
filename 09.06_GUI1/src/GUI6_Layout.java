@@ -23,6 +23,7 @@ public class GUI6_Layout {
         eastPanel.add(btPayment);
         panel.add(lbTitle, BorderLayout.NORTH);
         panel.add(taList, BorderLayout.CENTER);
+        panel.add(eastPanel, BorderLayout.EAST);
 
         frame.add(panel);
 
